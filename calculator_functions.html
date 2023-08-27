@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <script>
+var number1 = parseFloat (prompt ("Enter a number:"))
+var number2 = parseFloat (prompt ("Enter the 2nd number:”))
+
+var operator = prompt ("Enter the operator”)
+var sum=0;
+if (operator == "+"){
+sum = add (number1, number2)
+} 
+else if (operator == "-”){sum = subtract (number1, number2)}
+else if (operator == "*”) {sum = multiply (number1, number2)}
+else if (operator == "/”) {sum = divide (number1, number2)}
+else {	document.write ("invalid operator”)}
+
+document.write (sum);
+function add (num1, num2) {
+	return num1 + num2;
+}
+function subtract (num1, num2) {
+	return num1 - num2;
+}
+function multiply (num1, num2) {
+	return num1 * num2;
+}
+function divide (num1, num2) {
+	return num1 / num2;
+}
+
+</script>
+</body>
+</html>

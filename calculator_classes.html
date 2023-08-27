@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+var number1= parseFloat (prompt ("enter a number:"));
+var number2= parseFloat (prompt ("enter the 2nd number:"));
+var operator = prompt ("Enter the Operator");
+var sum = 0;
+
+class operations{
+
+add (num1, num2) {
+    return num1 + num2;
+}
+ subtract (num1, num2) {
+    return num1 - num2;
+}
+multiply (num1, num2) {
+    return num1 * num2;
+}
+divide (num1, num2) {
+    return num1 / num2;
+}
+}
+
+var new_object = new operations();
+
+
+if (operator == "+") {
+    sum=new_object.add(number1, number2)
+}
+else if (operator == "-") {
+
+    sum=new_object.subtract(number1, number2)
+}
+
+else if (operator == "*") {
+    sum=new_object.multiply(number1, number2)
+}
+
+else if (operator == "/") {
+    sum=new_object.divide(number1, number2)
+}
+
+else { 
+    document.write ("invalid operator")
+};
+
+document.write (sum);
+
+
+</script>
+</body>
+</html>
